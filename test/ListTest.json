@@ -1,0 +1,104 @@
+[
+    {
+      "testNumber": 1,
+      "description": "Should return the correct owner",
+      "function": "owner"
+    },
+    {
+      "testNumber": 2,
+      "description": "Should mint tokens to a user",
+      "function": "balanceOf"
+    },
+    {
+      "testNumber": 3,
+      "description": "Should not allow non-owners to mint tokens",
+      "testFunction": "mint"
+    },
+    {
+      "testNumber": 4,
+      "description": "Should transfer tokens from one user to another",
+      "testFunction": "safeTransferFrom"
+    },
+    {
+      "testNumber": 5,
+      "description": "Should allow users to approve transfers to other users",
+      "testFunction": "setApprovalForAll"
+    },
+    {
+      "testNumber": 6,
+      "description": "Should allow users to approve transfers to other users",
+      "testFunction": "safeTransferFrom"
+    },
+    {
+      "testNumber": 7,
+      "description": " Should allow users to get the balance of their tokens",
+      "testFunction": "balanceOf"
+    },
+    {
+      "testNumber": 8,
+      "description": "Should allow users to get the balance of multiple tokens",
+      "testFunction": "balanceOfBatch"
+    },
+    {
+      "testNumber": 9,
+      "description": "Should allow users to get the URI for a token",
+      "testFunction": "setURI"
+    },
+    {
+      "testNumber": 10,
+      "description": "Should not allow non-owners to set the URI for a token",
+      "testFunction": "setURI"
+    },
+    {
+      "testNumber": 11,
+      "description": "Should revert when users try to transfer more tokens than they own",
+      "testFunction": "mint safeTransferFrom"
+    },
+    {
+      "testNumber": 12,
+      "description": "Should revert when users try to transfer tokens to a zero address",
+      "testFunction": "mint safeTransferFrom"
+    },
+    {
+      "testNumber": 13,
+      "description": "Should allow users to transfer tokens they own",
+      "testFunction": "mint safeTransferFrom"
+    },
+    {
+      "testNumber": 14,
+      "description": "Should revert when users try to transfer tokens that do not exist",
+      "testFunction": "safeTransferFrom"
+    },
+    {
+      "testNumber": 15,
+      "description": "Should emit the ApprovalForAll event when a user approves another user to spend their tokens",
+      "testFunction": "setApprovalForAll isApprovedForAll"
+    },
+    {
+      "testNumber": 16,
+      "description": " Should revert when users try to mint multiple tokens at once with inconsistent lengths",
+      "testFunction": "batchMint"
+    },
+    {
+      "testNumber": 17,
+      "description": "Should allow users to mint multiple tokens at once",
+      "testFunction": "batchMint"
+    },
+
+    {
+      "testNumber": 18,
+      "description": "Should emit the TransferBatch event when a user transfers multiple tokens",
+      "testFunction": "batchMint safeTransferFrom"
+    },
+    {
+      "testNumber": 19,
+      "description": "Should emit the TransferSingle event when a user transfers a single token",
+      "testFunction": "mint safeTransferFrom"
+    },
+    {
+      "testNumber": 20,
+      "description": "Should allow users to get the balance of multiple tokens",
+      "testFunction": "mint balanceOfBatch"
+    }
+
+ ]
